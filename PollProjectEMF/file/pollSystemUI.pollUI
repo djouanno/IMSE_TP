@@ -7,10 +7,16 @@ P1 {
 	Q2 {
 			T4 => TEXT;
 	}
+	Q3 {
+			s1 => CHECKBOX;
+			s2 => CHECKBOX;
+			s3 => CHECKBOX;
+	}
 }
 P2 {
 	Q1 {
-			I1 => CHECKBOX;
-			I2 => CHECKBOX;
+			I1 => DROPDOWN;
+			I2 => DROPDOWN;
+			I3 => DROPDOWN;
 	}
 }

@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="ASCII"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:imse="imse" xmlns:imse.input="imse.input">
   <imse:Panel id="P1">
-    <questions id="Q1" text="Quel animal es-tu ?">
-      <inputs xsi:type="imse.input:Radio" text="Un cheval" id="T1"/>
-      <inputs xsi:type="imse.input:Radio" text="Un poisson" id="T2"/>
-      <inputs xsi:type="imse.input:Radio" text="Un keke" id="T3"/>
+    <questions id="Q1" text="How are you ?">
+      <inputs xsi:type="imse.input:Radio" text="Fine" id="T1"/>
+      <inputs xsi:type="imse.input:Radio" text="Terrible" id="T2"/>
+      <inputs xsi:type="imse.input:Radio" text="Very well" id="T3"/>
     </questions>
     <questions id="Q2" text="What's your name ?">
       <inputs xsi:type="imse.input:Text" text=" is my name." id="T4"/>
     </questions>
+    <questions id="Q3" text="What's your favorite food ?">
+      <inputs xsi:type="imse.input:Checkbox" text="Steak" id="s1"/>
+      <inputs xsi:type="imse.input:Checkbox" text="Chips" id="s2"/>
+      <inputs xsi:type="imse.input:Checkbox" text="Beans" id="s3"/>
+    </questions>
   </imse:Panel>
   <imse:Panel id="P2">
-    <questions id="Q1" text="Pourquoi ?">
-      <inputs xsi:type="imse.input:Checkbox" text="Je ne sais pas" id="I1"/>
-      <inputs xsi:type="imse.input:Checkbox" text="Par tradition" id="I2"/>
+    <questions id="Q1" text="Why ?">
+      <inputs xsi:type="imse.input:Dropdown" text="I don't know" id="I1"/>
+      <inputs xsi:type="imse.input:Dropdown" text="Because..." id="I2"/>
+      <inputs xsi:type="imse.input:Dropdown" text="I can't answer" id="I3"/>
     </questions>
   </imse:Panel>
 </xmi:XMI>

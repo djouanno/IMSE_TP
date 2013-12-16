@@ -101,6 +101,10 @@ class GeneratorMMUi {
 			input = InputFactory.eINSTANCE.createRadio
 		else if (optionUI.type == TYPE_OPTION.TEXT)
 			input = InputFactory.eINSTANCE.createText
+		else if (optionUI.type == TYPE_OPTION.DROPDOWN)
+			input = InputFactory.eINSTANCE.createDropdown
+		
+
 
 		input.setId(option.id)
 		input.setText(option.text)

@@ -7,6 +7,7 @@ import UiElement.Input.impl.TextImpl
 import UiElement.Panel
 import UiElement.Question
 import java.util.List
+import UiElement.Input.impl.DropdownImpl
 
 /**
  * This class transforms a MMUi model to HTML.
@@ -64,11 +65,22 @@ class GeneratorHTML {
 		<input type="checkbox" name="«question.id»" id="«input.id»" /><label for="«input.id»">«input.text»</label><br />
 		«ENDIF»
 		«IF input.class.equals(RadioImpl) »
-		<input type="radio" name="«question.id»" id="«input.id»" /><label for="«input.id»">«input.text»</label><br />
+		<input type="radio" name="«question.id»" value="«input.id»" id="«input.id»" /><label for="«input.id»">«input.text»</label><br />
 		«ENDIF»
 		«IF input.class.equals(TextImpl) »
 		<input type="text" name="«question.id»" id="«input.id»" /><label for="«input.id»">«input.text»</label><br />
-		«ENDIF»		
+		«ENDIF»	
+
+		«IF input.class.equals(DropdownImpl) »
+			«IF question.inputs.head == input »
+				<select name="«question.id»">
+			«ENDIF»
+				<option value="«input.id»" />«input.text»</option><br />
+			«IF question.inputs.last == input »
+				</select>
+			«ENDIF»
+		«ENDIF»	
+		
 		'''
 	}
 }
