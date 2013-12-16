@@ -12,3 +12,9 @@ Le second contient le meta modèle MMUi ainsi que les classes suivantes :
   - GeneratorMMUi : Cette classe prend en entrée les 2 modèles (PollSystem et PollSystemUI) et genère le modèle MMUi.
   - GeneratorHTML : Cette classe prend en entrée le modèle MMUi et genère le code HTML correspondant.
   - Launcher : Permet de lancer les différentes générations.
+
+Membres du projet :
+  - Damien JOUANNO
+  - Herminael ROUGIER
+  - Vincent PIET
+  - Adrien SERVEL
