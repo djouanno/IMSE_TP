@@ -1,0 +1,9 @@
+Poll P1 { 
+	Question Q1 { 
+		LABEL 
+		options { 
+			Truc => CHECKBOX; 
+			Machin => DROPDOWN;	
+		} 
+	}
+}

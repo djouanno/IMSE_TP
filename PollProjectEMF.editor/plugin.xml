@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated MMUi -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="UiElement.presentation.UiElementModelWizardID"
+            name="%_UI_UiElementModelWizard_label"
+            class="UiElement.presentation.UiElementModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/UiElementModelFile.gif">
+         <description>%_UI_UiElementModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated MMUi -->
+      <editor
+            id="UiElement.presentation.UiElementEditorID"
+            name="%_UI_UiElementEditor_label"
+            icon="icons/full/obj16/UiElementModelFile.gif"
+            extensions="uielement"
+            class="UiElement.presentation.UiElementEditor"
+            contributorClass="UiElement.presentation.UiElementActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated MMUi -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="UiElement.Input.presentation.InputModelWizardID"
+            name="%_UI_InputModelWizard_label"
+            class="UiElement.Input.presentation.InputModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/InputModelFile.gif">
+         <description>%_UI_InputModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated MMUi -->
+      <editor
+            id="UiElement.Input.presentation.InputEditorID"
+            name="%_UI_InputEditor_label"
+            icon="icons/full/obj16/InputModelFile.gif"
+            extensions="input"
+            class="UiElement.Input.presentation.InputEditor"
+            contributorClass="UiElement.Input.presentation.InputActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

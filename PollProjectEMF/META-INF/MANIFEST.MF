@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: PollProjectEMF;singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: UiElement,
+ UiElement.Input,
+ UiElement.Input.impl,
+ UiElement.Input.util,
+ UiElement.impl,
+ UiElement.util
+Require-Bundle: fr.esir.imse.PollSystemDSL;bundle-version="1.0.0",
+ fr.esir.imse.PollSystemUI;bundle-version="1.0.0",
+ org.eclipse.core.runtime,
+ org.eclipse.emf.ecore,
+ PollProjectEMF;visibility:=reexport,
+ org.eclipse.xtend.lib,
+ com.google.guava,
+ org.eclipse.xtext.xbase.lib
+Bundle-ActivationPolicy: lazy
+

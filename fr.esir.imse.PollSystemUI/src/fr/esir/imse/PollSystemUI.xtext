@@ -1,0 +1,23 @@
+grammar fr.esir.imse.PollSystemUI with org.eclipse.xtext.common.Terminals
+
+generate pollSystemUI "http://www.esir.fr/imse/PollSystemUI"
+
+PollSystemUI : 
+	pollsUI+=PollUI*
+;
+
+PollUI : 
+	id=ID? '{' questionsUI+=QuestionUI+ '}'
+;
+
+QuestionUI : 
+	id=ID?  '{' optionsUI+=OptionUI+ '}'
+;
+
+OptionUI : 
+	(id=ID '=>')? type=TYPE_OPTION ';'
+;
+
+enum TYPE_OPTION:
+	CHECKBOX | LABEL | RADIO | DROPDOWN
+;

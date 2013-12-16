@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:imse="imse" xmlns:imse.input="imse.input">
+  <imse:Panel id="P1">
+    <questions id="Q1" text="Quel animal es-tu ?">
+      <inputs xsi:type="imse.input:Radio" text="Un cheval" id="T1"/>
+      <inputs xsi:type="imse.input:Radio" text="Un poisson" id="T2"/>
+      <inputs xsi:type="imse.input:Radio" text="Un keke" id="T3"/>
+    </questions>
+  </imse:Panel>
+  <imse:Panel id="P2">
+    <questions id="Q1" text="Pourquoi ?">
+      <inputs xsi:type="imse.input:Checkbox" text="Je ne sais pas" id="I1"/>
+      <inputs xsi:type="imse.input:Checkbox" text="Par tradition" id="I2"/>
+    </questions>
+  </imse:Panel>
+</xmi:XMI>

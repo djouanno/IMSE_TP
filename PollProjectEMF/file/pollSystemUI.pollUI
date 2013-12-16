@@ -1,0 +1,13 @@
+P1 {
+	Q1 {
+			T1 => RADIO;
+			T2 => RADIO;
+			T3 => RADIO;
+	}
+}
+P2 {
+	Q1 {
+			I1 => CHECKBOX;
+			I2 => CHECKBOX;
+	}
+}

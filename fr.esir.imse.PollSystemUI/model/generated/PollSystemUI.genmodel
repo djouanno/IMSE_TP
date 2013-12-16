@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/fr.esir.imse.PollSystemUI/src-gen" editDirectory="/fr.esir.imse.PollSystemUI.edit/src"
+    editorDirectory="/fr.esir.imse.PollSystemUI.editor/src" modelPluginID="fr.esir.imse.PollSystemUI"
+    forceOverwrite="true" modelName="PollSystemUI" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="fr.esir.imse.PollSystemUI.edit"
+    editorPluginID="fr.esir.imse.PollSystemUI.editor" runtimeVersion="2.9">
+  <genPackages prefix="PollSystemUI" basePackage="fr.esir.imse" disposableProviderFactory="true"
+      fileExtensions="pollUI" ecorePackage="PollSystemUI.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="PollSystemUI.ecore#//TYPE_OPTION">
+      <genEnumLiterals ecoreEnumLiteral="PollSystemUI.ecore#//TYPE_OPTION/CHECKBOX"/>
+      <genEnumLiterals ecoreEnumLiteral="PollSystemUI.ecore#//TYPE_OPTION/LABEL"/>
+      <genEnumLiterals ecoreEnumLiteral="PollSystemUI.ecore#//TYPE_OPTION/RADIO"/>
+      <genEnumLiterals ecoreEnumLiteral="PollSystemUI.ecore#//TYPE_OPTION/DROPDOWN"/>
+    </genEnums>
+    <genClasses ecoreClass="PollSystemUI.ecore#//PollSystemUI">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PollSystemUI.ecore#//PollSystemUI/pollsUI"/>
+    </genClasses>
+    <genClasses ecoreClass="PollSystemUI.ecore#//PollUI">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PollSystemUI.ecore#//PollUI/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PollSystemUI.ecore#//PollUI/questionsUI"/>
+    </genClasses>
+    <genClasses ecoreClass="PollSystemUI.ecore#//QuestionUI">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PollSystemUI.ecore#//QuestionUI/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PollSystemUI.ecore#//QuestionUI/optionsUI"/>
+    </genClasses>
+    <genClasses ecoreClass="PollSystemUI.ecore#//OptionUI">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PollSystemUI.ecore#//OptionUI/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PollSystemUI.ecore#//OptionUI/type"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
