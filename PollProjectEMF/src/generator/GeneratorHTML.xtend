@@ -23,7 +23,6 @@ class GeneratorHTML {
 					«compile(panel)»
 				«ENDFOR»
 			</div>
-			<button name="">Envoyer</button>
 		'''
 	}
 
@@ -36,6 +35,8 @@ class GeneratorHTML {
 				«FOR question : panel.questions»
 					«compile(question)»
 				«ENDFOR»
+				<br/><br/>
+				<button type="submit" name="">Envoyer</button>
 			</form>
 		'''
 	}
