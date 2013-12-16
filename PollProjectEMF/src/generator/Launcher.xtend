@@ -24,6 +24,8 @@ class Launcher {
 	 */
 	def static writeFileObject(String url, String append) {
 		var file = new File(url);
+		if(file.exists)
+			file.delete;
 		try {
 			var fw = new FileWriter(file, true);
 			fw.write(append);
