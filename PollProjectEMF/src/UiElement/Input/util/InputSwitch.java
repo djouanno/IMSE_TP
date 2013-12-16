@@ -100,6 +100,13 @@ public class InputSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case InputPackage.TEXT: {
+				Text text = (Text)theEObject;
+				T result = caseText(text);
+				if (result == null) result = caseInput(text);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -176,6 +183,21 @@ public class InputSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseDropdown(Dropdown object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Text</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Text</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseText(Text object) {
 		return null;
 	}
 

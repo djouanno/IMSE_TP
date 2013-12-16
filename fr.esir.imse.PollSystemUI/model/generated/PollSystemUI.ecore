@@ -21,7 +21,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="TYPE_OPTION">
     <eLiterals name="CHECKBOX" literal="CHECKBOX"/>
-    <eLiterals name="LABEL" value="1" literal="LABEL"/>
+    <eLiterals name="TEXT" value="1" literal="TEXT"/>
     <eLiterals name="RADIO" value="2" literal="RADIO"/>
     <eLiterals name="DROPDOWN" value="3" literal="DROPDOWN"/>
   </eClassifiers>

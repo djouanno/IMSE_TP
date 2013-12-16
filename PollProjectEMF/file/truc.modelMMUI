@@ -6,6 +6,9 @@
       <inputs xsi:type="imse.input:Radio" text="Un poisson" id="T2"/>
       <inputs xsi:type="imse.input:Radio" text="Un keke" id="T3"/>
     </questions>
+    <questions id="Q2" text="What's your name ?">
+      <inputs xsi:type="imse.input:Text" text=" is my name." id="T4"/>
+    </questions>
   </imse:Panel>
   <imse:Panel id="P2">
     <questions id="Q1" text="Pourquoi ?">

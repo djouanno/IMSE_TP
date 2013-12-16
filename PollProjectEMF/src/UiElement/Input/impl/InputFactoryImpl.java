@@ -60,6 +60,7 @@ public class InputFactoryImpl extends EFactoryImpl implements InputFactory {
 			case InputPackage.RADIO: return createRadio();
 			case InputPackage.BUTTON: return createButton();
 			case InputPackage.DROPDOWN: return createDropdown();
+			case InputPackage.TEXT: return createText();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -103,6 +104,16 @@ public class InputFactoryImpl extends EFactoryImpl implements InputFactory {
 	public Dropdown createDropdown() {
 		DropdownImpl dropdown = new DropdownImpl();
 		return dropdown;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Text createText() {
+		TextImpl text = new TextImpl();
+		return text;
 	}
 
 	/**

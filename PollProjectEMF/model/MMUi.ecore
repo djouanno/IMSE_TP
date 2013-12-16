@@ -24,5 +24,6 @@
     <eClassifiers xsi:type="ecore:EClass" name="Radio" eSuperTypes="#//Input/Input"/>
     <eClassifiers xsi:type="ecore:EClass" name="Button" eSuperTypes="#//Input/Input"/>
     <eClassifiers xsi:type="ecore:EClass" name="Dropdown" eSuperTypes="#//Input/Input"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Text" eSuperTypes="#//Input/Input"/>
   </eSubpackages>
 </ecore:EPackage>

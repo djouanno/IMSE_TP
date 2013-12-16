@@ -10,6 +10,7 @@ import UiElement.Input.InputFactory;
 import UiElement.Input.InputPackage;
 import UiElement.Input.Radio;
 
+import UiElement.Input.Text;
 import UiElement.UiElementPackage;
 
 import UiElement.impl.UiElementPackageImpl;
@@ -61,6 +62,13 @@ public class InputPackageImpl extends EPackageImpl implements InputPackage {
 	 * @generated
 	 */
 	private EClass dropdownEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass textEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -196,6 +204,15 @@ public class InputPackageImpl extends EPackageImpl implements InputPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getText() {
+		return textEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public InputFactory getInputFactory() {
 		return (InputFactory)getEFactoryInstance();
 	}
@@ -230,6 +247,8 @@ public class InputPackageImpl extends EPackageImpl implements InputPackage {
 		buttonEClass = createEClass(BUTTON);
 
 		dropdownEClass = createEClass(DROPDOWN);
+
+		textEClass = createEClass(TEXT);
 	}
 
 	/**
@@ -264,6 +283,7 @@ public class InputPackageImpl extends EPackageImpl implements InputPackage {
 		radioEClass.getESuperTypes().add(this.getInput());
 		buttonEClass.getESuperTypes().add(this.getInput());
 		dropdownEClass.getESuperTypes().add(this.getInput());
+		textEClass.getESuperTypes().add(this.getInput());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(inputEClass, Input.class, "Input", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -277,6 +297,8 @@ public class InputPackageImpl extends EPackageImpl implements InputPackage {
 		initEClass(buttonEClass, Button.class, "Button", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(dropdownEClass, Dropdown.class, "Dropdown", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(textEClass, Text.class, "Text", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 	}
 
 } //InputPackageImpl

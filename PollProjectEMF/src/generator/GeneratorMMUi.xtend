@@ -24,8 +24,14 @@ import org.eclipse.emf.ecore.resource.ResourceSet
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl
 
+/**
+ * This class take PollSystem Model and PollSystemUI model to transform them in MMUi model.
+ */
 class GeneratorMMUi {
 	
+	/**
+	 * Generate and return the MMUi model.
+	 */
 	def doGenerate() {
 		PollSystemStandaloneSetup.doSetup
 		PollSystemUIStandaloneSetup.doSetup
@@ -41,11 +47,17 @@ class GeneratorMMUi {
 		return panels
 	}
 
+	/**
+	 * Read model from url.
+	 */
 	def readModel(String url) {
 		var ResourceSet resourceSet = new ResourceSetImpl();
 		return resourceSet.getResource(URI.createURI(url), true).allContents.toList
 	}
 
+	/**
+	 * Generate MMUi model from Poll and PollUi
+	 */
 	def compile(Poll poll, PollUI pollUI) {
 		var panel = UiElementFactory.eINSTANCE.createPanel;
 		panel.setId(poll.id)
@@ -59,6 +71,9 @@ class GeneratorMMUi {
 		return panel
 	}
 
+	/**
+	 * Generate MMUi model from Question and QuestionUI
+	 */
 	def compile(Question question, QuestionUI questionUI) {
 		var questionMMui = UiElementFactory.eINSTANCE.createQuestion;
 
@@ -72,7 +87,10 @@ class GeneratorMMUi {
 		}
 		return questionMMui
 	}
-
+	
+	/**
+	 * Generate MMUi model from Option and OptionUI
+	 */
 	def compile(Option option, OptionUI optionUI) {
 
 		var Input input = null;
@@ -81,6 +99,8 @@ class GeneratorMMUi {
 			input = InputFactory.eINSTANCE.createCheckbox
 		else if (optionUI.type == TYPE_OPTION.RADIO)
 			input = InputFactory.eINSTANCE.createRadio
+		else if (optionUI.type == TYPE_OPTION.TEXT)
+			input = InputFactory.eINSTANCE.createText
 
 		input.setId(option.id)
 		input.setText(option.text)
@@ -88,6 +108,9 @@ class GeneratorMMUi {
 		return input
 	}
 
+	/**
+	 * Save MMUi model in XMI file.
+	 */
 	def saveModel(String url, List<Panel> models) {
 
 		// Create a resource set.

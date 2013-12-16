@@ -25,6 +25,7 @@
       <genClasses ecoreClass="MMUi.ecore#//Input/Radio"/>
       <genClasses ecoreClass="MMUi.ecore#//Input/Button"/>
       <genClasses ecoreClass="MMUi.ecore#//Input/Dropdown"/>
+      <genClasses ecoreClass="MMUi.ecore#//Input/Text"/>
     </nestedGenPackages>
   </genPackages>
 </genmodel:GenModel>

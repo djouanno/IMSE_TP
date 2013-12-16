@@ -288,6 +288,53 @@ public interface InputPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link UiElement.Input.impl.TextImpl <em>Text</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see UiElement.Input.impl.TextImpl
+	 * @see UiElement.Input.impl.InputPackageImpl#getText()
+	 * @generated
+	 */
+	int TEXT = 5;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEXT__TEXT = INPUT__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEXT__ID = INPUT__ID;
+
+	/**
+	 * The number of structural features of the '<em>Text</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEXT_FEATURE_COUNT = INPUT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Text</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEXT_OPERATION_COUNT = INPUT_OPERATION_COUNT + 0;
+
+
+	/**
 	 * Returns the meta object for class '{@link UiElement.Input.Input <em>Input</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -358,6 +405,16 @@ public interface InputPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getDropdown();
+
+	/**
+	 * Returns the meta object for class '{@link UiElement.Input.Text <em>Text</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Text</em>'.
+	 * @see UiElement.Input.Text
+	 * @generated
+	 */
+	EClass getText();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -447,6 +504,16 @@ public interface InputPackage extends EPackage {
 		 * @generated
 		 */
 		EClass DROPDOWN = eINSTANCE.getDropdown();
+
+		/**
+		 * The meta object literal for the '{@link UiElement.Input.impl.TextImpl <em>Text</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see UiElement.Input.impl.TextImpl
+		 * @see UiElement.Input.impl.InputPackageImpl#getText()
+		 * @generated
+		 */
+		EClass TEXT = eINSTANCE.getText();
 
 	}
 

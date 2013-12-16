@@ -9,7 +9,7 @@
       fileExtensions="pollUI" ecorePackage="PollSystemUI.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="PollSystemUI.ecore#//TYPE_OPTION">
       <genEnumLiterals ecoreEnumLiteral="PollSystemUI.ecore#//TYPE_OPTION/CHECKBOX"/>
-      <genEnumLiterals ecoreEnumLiteral="PollSystemUI.ecore#//TYPE_OPTION/LABEL"/>
+      <genEnumLiterals ecoreEnumLiteral="PollSystemUI.ecore#//TYPE_OPTION/TEXT"/>
       <genEnumLiterals ecoreEnumLiteral="PollSystemUI.ecore#//TYPE_OPTION/RADIO"/>
       <genEnumLiterals ecoreEnumLiteral="PollSystemUI.ecore#//TYPE_OPTION/DROPDOWN"/>
     </genEnums>

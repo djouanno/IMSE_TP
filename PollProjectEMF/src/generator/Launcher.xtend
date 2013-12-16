@@ -4,6 +4,9 @@ import java.io.File
 import java.io.FileWriter
 import java.io.IOException
 
+/**
+ * Launch the MMUi generator and HTML generator
+ */
 class Launcher {
 
 	static def void main(String[] args) {
@@ -16,6 +19,9 @@ class Launcher {
 
 	}
 
+	/**
+	 * Write model into file.
+	 */
 	def static writeFileObject(String url, String append) {
 		var file = new File(url);
 		try {

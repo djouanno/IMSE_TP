@@ -88,6 +88,10 @@ public class InputAdapterFactory extends AdapterFactoryImpl {
 				return createDropdownAdapter();
 			}
 			@Override
+			public Adapter caseText(Text object) {
+				return createTextAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -174,6 +178,20 @@ public class InputAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createDropdownAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link UiElement.Input.Text <em>Text</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see UiElement.Input.Text
+	 * @generated
+	 */
+	public Adapter createTextAdapter() {
 		return null;
 	}
 

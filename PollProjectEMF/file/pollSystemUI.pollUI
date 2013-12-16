@@ -4,6 +4,9 @@ P1 {
 			T2 => RADIO;
 			T3 => RADIO;
 	}
+	Q2 {
+			T4 => TEXT;
+	}
 }
 P2 {
 	Q1 {
